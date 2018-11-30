@@ -9,7 +9,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /proc/:/host/proc/
       - /cgroup/:/host/sys/fs/cgroup/
-      - ./php_fpm.yaml:/conf.d/php_fpm.yaml
+      - php_fpm.yaml:/conf.d/php_fpm.yaml
     ports:
       - 8125/udp
       - 8126/tcp
