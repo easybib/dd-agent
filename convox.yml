@@ -4,6 +4,7 @@ services:
     environment:
      - DD_API_KEY
      - DD_TAGS
+     - DD_APM_ANALYZED_SPANS
      - DD_PROCESS_AGENT_ENABLED=true
      - DD_APM_ENABLED=true
      - SD_BACKEND=docker
