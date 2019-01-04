@@ -1,0 +1,6 @@
+init_config:
+
+instances:
+  - status_url: unix:///run/php/php7-fpm.sock/status # or whatever pm.status_path is set to in your PHP INI
+    ping_url: unix:///run/php/php7-fpm.sock/   # or whatever ping.path is set to in your PHP INI
+    ping_reply: pong                    # the reply to expect from ping; default is 'pong'
